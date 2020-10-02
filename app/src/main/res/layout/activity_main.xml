@@ -4,15 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20sp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.dinh.dinhlibrary.edittext.FormattedEditText
+        android:id="@+id/formattedEditText_simple"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:inputType="phone"
+        android:maxLength="13"
+        app:fet_clearDrawable="@drawable/ic_baseline_clear_24"
+        app:fet_drawableGravity="fet_center"
+        app:fet_drawablePadding="4dp"
+        app:fet_formatStyle="344"
+        app:fet_mode="mode_simple"
+        app:fet_placeholder="-"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

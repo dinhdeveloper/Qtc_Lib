@@ -1,2 +1,3 @@
+include ':dinhlibrary'
 include ':app'
 rootProject.name = "QTC"
